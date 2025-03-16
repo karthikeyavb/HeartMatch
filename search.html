@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | HeartMatch</title>
+    <link rel="icon" type="image/x-icon" href="images/app-mockup.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">Heart<span>Match</span></a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html" class="active">Search</a></li>
+                    <li><a href="matches.html">Matches</a></li>
+                    <li><a href="success-stories.html">Success Stories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Register</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-container">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Your Perfect Match</h2>
+                <p>Use our advanced search filters to find compatible partners</p>
+            </div>
+            
+            <div class="search-filters">
+                <form id="searchForm">
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label for="gender">Looking for</label>
+                            <select id="gender" class="form-control">
+                                <option value="">Any</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="age-from">Age Range</label>
+                            <div class="range-inputs">
+                                <input type="number" id="age-from" class="form-control" placeholder="From" min="18" max="80">
+                                <span>to</span>
+                                <input type="number" id="age-to" class="form-control" placeholder="To" min="18" max="80">
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <label for="location">Location</label>
+                            <select id="location" class="form-control">
+                                <option value="">Any</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="pune">Pune</option>
+                                <option value="kolkata">Kolkata</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label for="religion">Religion</label>
+                            <select id="religion" class="form-control">
+                                <option value="">Any</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="muslim">Muslim</option>
+                                <option value="christian">Christian</option>
+                                <option value="sikh">Sikh</option>
+                                <option value="jain">Jain</option>
+                                <option value="buddhist">Buddhist</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="mother-tongue">Mother Tongue</label>
+                            <select id="mother-tongue" class="form-control">
+                                <option value="">Any</option>
+                                <option value="hindi">Hindi</option>
+                                <option value="tamil">Tamil</option>
+                                <option value="telugu">Telugu</option>
+                                <option value="marathi">Marathi</option>
+                                <option value="bengali">Bengali</option>
+                                <option value="gujarati">Gujarati</option>
+                                <option value="kannada">Kannada</option>
+                                <option value="malayalam">Malayalam</option>
+                                <option value="punjabi">Punjabi</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="education">Education</label>
+                            <select id="education" class="form-control">
+                                <option value="">Any</option>
+                                <option value="high-school">High School</option>
+                                <option value="bachelor">Bachelor's Degree</option>
+                                <option value="master">Master's Degree</option>
+                                <option value="doctorate">Doctorate</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label for="occupation">Occupation</label>
+                            <select id="occupation" class="form-control">
+                                <option value="">Any</option>
+                                <option value="it">IT Professional</option>
+                                <option value="doctor">Doctor</option>
+                                <option value="engineer">Engineer</option>
+                                <option value="teacher">Teacher</option>
+                                <option value="business">Business</option>
+                                <option value="government">Government</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="marital-status">Marital Status</label>
+                            <select id="marital-status" class="form-control">
+                                <option value="">Any</option>
+                                <option value="never-married">Never Married</option>
+                                <option value="divorced">Divorced</option>
+                                <option value="widowed">Widowed</option>
+                                <option value="separated">Separated</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="keywords">Keywords</label>
+                            <input type="text" id="keywords" class="form-control" placeholder="Search by keywords">
+                        </div>
+                    </div>
+                    
+                    <div class="filter-actions">
+                        <button type="reset" class="btn btn-outline">Reset Filters</button>
+                        <button type="submit" class="btn btn-primary">Search Profiles</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="search-results">
+                <!-- Profile cards will be dynamically loaded here -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="images/priya.png" alt="Priya S.">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Priya S., 28</h3>
+                        <div class="profile-meta">
+                            <span>Mumbai</span>
+                            <span>Software Engineer</span>
+                        </div>
+                        <p class="profile-bio">Passionate about technology and travel. Looking for someone who shares my interests.</p>
+                        <div class="profile-tags">
+                            <span class="tag">Tech</span>
+                            <span class="tag">Travel</span>
+                            <span class="tag">Music</span>
+                        </div>
+                        <div class="profile-actions">
+                            <a href="profile.html?id=1" class="btn btn-outline">View Profile</a>
+                            <a href="connect.html?id=1" class="btn btn-primary">Connect</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="images/rahul.png" alt="Rahul K.">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Rahul K., 32</h3>
+                        <div class="profile-meta">
+                            <span>Delhi</span>
+                            <span>Doctor</span>
+                        </div>
+                        <p class="profile-bio">Doctor by profession, photographer by passion. Seeking a partner who values honesty and compassion.</p>
+                        <div class="profile-tags">
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Photography</span>
+                            <span class="tag">Reading</span>
+                        </div>
+                        <div class="profile-actions">
+                            <a href="profile.html?id=2" class="btn btn-outline">View Profile</a>
+                            <a href="connect.html?id=2" class="btn btn-primary">Connect</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="images/ananya.png" alt="Ananya M.">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Ananya M., 27</h3>
+                        <div class="profile-meta">
+                            <span>Bangalore</span>
+                            <span>Marketing Manager</span>
+                        </div>
+                        <p class="profile-bio">Creative soul with a love for art and culture. Looking for someone who appreciates the finer things in life.</p>
+                        <div class="profile-tags">
+                            <span class="tag">Art</span>
+                            <span class="tag">Culture</span>
+                            <span class="tag">Fitness</span>
+                        </div>
+                        <div class="profile-actions">
+                            <a href="profile.html?id=3" class="btn btn-outline">View Profile</a>
+                            <a href="connect.html?id=3" class="btn btn-primary">Connect</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="images/vikram.png" alt="Vikram S.">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Vikram S., 30</h3>
+                        <div class="profile-meta">
+                            <span>Chennai</span>
+                            <span>Entrepreneur</span>
+                        </div>
+                        <p class="profile-bio">Business owner with a passion for innovation. Looking for a supportive partner to share life's journey.</p>
+                        <div class="profile-tags">
+                            <span class="tag">Business</span>
+                            <span class="tag">Innovation</span>
+                            <span class="tag">Travel</span>
+                        </div>
+                        <div class="profile-actions">
+                            <a href="profile.html?id=4" class="btn btn-outline">View Profile</a>
+                            <a href="connect.html?id=4" class="btn btn-primary">Connect</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link">5</a>
+                <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Heart<span>Match</span></h2>
+                    <p>Your journey to finding true love starts here</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="search.html">Search</a></li>
+                            <li><a href="matches.html">Matches</a></li>
+                            <li><a href="success-stories.html">Success Stories</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Help & Support</h3>
+                        <ul>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="safety.html">Safety Tips</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Wedding Street, Love City</li>
+                            <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                            <li><i class="fas fa-envelope"></i> info@heartmatch.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HeartMatch. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

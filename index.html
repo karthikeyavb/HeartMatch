@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartMatch | Find Your Perfect Partner</title>
+    <link rel="icon" type="image/x-icon" href="images/app-mockup.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Heart<span>Match</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="matches.html">Matches</a></li>
+                    <li><a href="success-stories.html">Success Stories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Register</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your Perfect Life Partner</h1>
+                <p>Join thousands of happy couples who found their soulmate on HeartMatch</p>
+                <div class="hero-buttons">
+                    <a href="register.html" class="btn btn-primary btn-large">Get Started</a>
+                    <a href="#how-it-works" class="btn btn-secondary btn-large">Learn More</a>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="count">10000+</span>
+                        <span class="label">Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="count">5000+</span>
+                        <span class="label">Matches</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="count">5000+</span>
+                        <span class="label">Success Stories</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="Happy Couple">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Find your perfect match in just 3 simple steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Create Profile</h3>
+                    <p>Sign up and create your detailed profile with photos and preferences</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Find Matches</h3>
+                    <p>Browse profiles or let our algorithm suggest perfect matches for you</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Connect</h3>
+                    <p>Start conversations and build meaningful relationships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Profiles Section -->
+        <!-- Featured Profiles Section -->
+        <section class="featured-profiles">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Profiles</h2>
+                    <p>Some of our highlighted members looking for a match</p>
+                </div>
+                <div class="profiles-slider" id="profilesSlider">
+                    <!-- Static profile cards instead of dynamic loading -->
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="images/priya.png" alt="Priya S.">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Priya S.</h3>
+                            <div class="profile-meta">
+                                <span>28 years</span>
+                                <span>Mumbai</span>
+                            </div>
+                            <p class="profile-bio">Passionate about technology and travel. Looking for someone who shares my interests.</p>
+                            <div class="profile-tags">
+                                <span class="tag">Tech</span>
+                                <span class="tag">Travel</span>
+                                <span class="tag">Music</span>
+                            </div>
+                            <div class="profile-actions">
+                                <a href="profile.html?id=1" class="btn btn-sm btn-outline">View Profile</a>
+                                <a href="connect.html?id=1" class="btn btn-primary">Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="images/rahul.png" alt="Rahul K.">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Rahul K.</h3>
+                            <div class="profile-meta">
+                                <span>32 years</span>
+                                <span>Delhi</span>
+                            </div>
+                            <p class="profile-bio">Doctor by profession, photographer by passion. Seeking a partner who values honesty and compassion.</p>
+                            <div class="profile-tags">
+                                <span class="tag">Healthcare</span>
+                                <span class="tag">Photography</span>
+                                <span class="tag">Reading</span>
+                            </div>
+                            <div class="profile-actions">
+                                <a href="profile.html?id=2" class="btn btn-sm btn-outline">View Profile</a>
+                                <a href="connect.html?id=1" class="btn btn-primary">Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="images/ananya.png" alt="Ananya M.">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Ananya M.</h3>
+                            <div class="profile-meta">
+                                <span>27 years</span>
+                                <span>Bangalore</span>
+                            </div>
+                            <p class="profile-bio">Creative soul with a love for art and culture. Looking for someone who appreciates the finer things in life.</p>
+                            <div class="profile-tags">
+                                <span class="tag">Art</span>
+                                <span class="tag">Culture</span>
+                                <span class="tag">Fitness</span>
+                            </div>
+                            <div class="profile-actions">
+                                <a href="profile.html?id=3" class="btn btn-sm btn-outline">View Profile</a>
+                                <a href="connect.html?id=1" class="btn btn-primary">Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button id="prevProfile" class="slider-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextProfile" class="slider-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="view-more-container">
+                    <a href="search.html" class="btn btn-outline">View More Profiles</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>Couples who found their perfect match on HeartMatch</p>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="couple-image">
+                        <img src="images/couple1.png" alt="Happy Couple">
+                    </div>
+                    <div class="testimonial-content">
+                        <h3>Priya & Rahul</h3>
+                        <p class="marriage-date">Married on June 15, 2022</p>
+                        <p class="testimonial-text">"We connected on HeartMatch and instantly knew we were meant for each other. After 6 months of getting to know each other, we decided to tie the knot. Thank you HeartMatch for helping us find true love!"</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="couple-image">
+                        <img src="images/couple2.png" alt="Happy Couple">
+                    </div>
+                    <div class="testimonial-content">
+                        <h3>Ananya & Vikram</h3>
+                        <p class="marriage-date">Married on October 8, 2022</p>
+                        <p class="testimonial-text">"The matching algorithm on HeartMatch is truly amazing! We were suggested to each other based on our interests and values, and it couldn't have been more perfect. We're now happily married and grateful to HeartMatch."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-container">
+                <a href="success-stories.html" class="btn btn-outline">Read More Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Plans Section -->
+    <section class="premium-plans">
+        <div class="container">
+            <div class="section-header">
+                <h2>Premium Plans</h2>
+                <p>Choose the right plan for your journey to find love</p>
+            </div>
+            <div class="plans">
+                <div class="plan">
+                    <div class="plan-header">
+                        <h3>Basic</h3>
+                        <div class="price">
+                            <span class="amount">₹999</span>
+                            <span class="duration">/ month</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Browse profiles</li>
+                            <li><i class="fas fa-check"></i> 10 messages per day</li>
+                            <li><i class="fas fa-check"></i> View contact details</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Advanced matching</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Profile highlighting</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="subscribe.html?plan=basic" class="btn btn-outline btn-block">Choose Plan</a>
+                    </div>
+                </div>
+                <div class="plan featured">
+                    <div class="plan-tag">Popular</div>
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="amount">₹1,999</span>
+                            <span class="duration">/ month</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Browse profiles</li>
+                            <li><i class="fas fa-check"></i> Unlimited messages</li>
+                            <li><i class="fas fa-check"></i> View contact details</li>
+                            <li><i class="fas fa-check"></i> Advanced matching</li>
+                            <li><i class="fas fa-check"></i> Profile highlighting</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="subscribe.html?plan=premium" class="btn btn-primary btn-block">Choose Plan</a>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="plan-header">
+                        <h3>VIP</h3>
+                        <div class="price">
+                            <span class="amount">₹3,999</span>
+                            <span class="duration">/ month</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> All Premium features</li>
+                            <li><i class="fas fa-check"></i> Personal matchmaking</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Profile verification</li>
+                            <li><i class="fas fa-check"></i> Background checks</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="subscribe.html?plan=vip" class="btn btn-outline btn-block">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download Section -->
+    <section class="app-download">
+        <div class="container">
+            <div class="app-content">
+                <h2>Take HeartMatch With You</h2>
+                <p>Download our mobile app and find your perfect match on the go</p>
+                <div class="app-buttons">
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-google-play"></i>
+                        <span>
+                            <small>Get it on</small>
+                            <strong>Google Play</strong>
+                        </span>
+                    </a>
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-apple"></i>
+                        <span>
+                            <small>Download on the</small>
+                            <strong>App Store</strong>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="app-image">
+                <img src="images/app-mockup.png" alt="HeartMatch Mobile App">
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for dating tips and special offers</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Heart<span>Match</span></h2>
+                    <p>Your journey to finding true love starts here</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="search.html">Search</a></li>
+                            <li><a href="matches.html">Matches</a></li>
+                            <li><a href="success-stories.html">Success Stories</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Help & Support</h3>
+                        <ul>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="safety.html">Safety Tips</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Wedding Street, Love City</li>
+                            <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                            <li><i class="fas fa-envelope"></i> info@heartmatch.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HeartMatch. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

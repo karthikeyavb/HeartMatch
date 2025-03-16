@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Matches | HeartMatch</title>
+    <link rel="icon" type="image/x-icon" href="images/app-mockup.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">Heart<span>Match</span></a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="matches.html" class="active">Matches</a></li>
+                    <li><a href="success-stories.html">Success Stories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Register</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Matches Section -->
+    <section class="matches-container">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Perfect Matches</h2>
+                <p>Our intelligent algorithm has found these compatible profiles for you</p>
+            </div>
+            
+            <div class="matches-tabs">
+                <a href="#" class="match-tab active" data-tab="new-matches">New Matches</a>
+                <a href="#" class="match-tab" data-tab="mutual-matches">Mutual Matches</a>
+                <a href="#" class="match-tab" data-tab="viewed-profiles">Viewed Your Profile</a>
+                <a href="#" class="match-tab" data-tab="favorites">Your Favorites</a>
+            </div>
+            
+            <div class="match-content active" id="new-matches">
+                <div class="match-grid">
+                    <div class="profile-card match-card">
+                        <div class="match-percentage">
+                            <span>92%</span>
+                        </div>
+                        <div class="profile-image">
+                            <img src="images/neha.png" alt="Neha R.">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Neha R., 26</h3>
+                            <div class="profile-meta">
+                                <span>Pune</span>
+                                <span>Architect</span>
+                            </div>
+                            <p class="profile-bio">Creative architect who loves designing spaces. Seeking someone who appreciates art and architecture.</p>
+                            <div class="profile-tags">
+                                <span class="tag">Design</span>
+                                <span class="tag">Art</span>
+                                <span class="tag">Nature</span>
+                            </div>
+                            <div class="profile-actions">
+                                <a href="profile.html?id=5" class="btn btn-outline">View Profile</a>
+                                <a href="connect.html?id=5" class="btn btn-primary">Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-card match-card">
+                        <div class="match-percentage">
+                            <span>88%</span>
+                        </div>
+                        <div class="profile-image">
+                            <img src="images/arjun.png" alt="Arjun P.">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Arjun P., 31</h3>
+                            <div class="profile-meta">
+                                <span>Hyderabad</span>
+                                <span>Financial Analyst</span>
+                            </div>
+                            <p class="profile-bio">Finance professional who enjoys hiking and outdoor activities. Looking for an adventurous partner.</p>
+                            <div class="profile-tags">
+                                <span class="tag">Finance</span>
+                                <span class="tag">Adventure</span>
+                                <span class="tag">Fitness</span>
+                            </div>
+                            <div class="profile-actions">
+                                <a href="profile.html?id=6" class="btn btn-outline">View Profile</a>
+                                <a href="connect.html?id=6" class="btn btn-primary">Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-card match-card">
+                        <div class="match-percentage">
+                            <span>85%</span>
+                        </div>
+                        <div class="profile-image">
+                            <img src="images/meera.png" alt="Meera J.">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Meera J., 29</h3>
+                            <div class="profile-meta">
+                                <span>Kolkata</span>
+                                <span>Professor</span>
+                            </div>
+                            <p class="profile-bio">Literature professor with a passion for books and classical music. Looking for an intellectual partner.</p>
+                            <div class="profile-tags">
+                                <span class="tag">Literature</span>
+                                <span class="tag">Music</span>
+                                <span class="tag">Teaching</span>
+                            </div>
+                            <div class="profile-actions">
+                                <a href="profile.html?id=7" class="btn btn-outline">View Profile</a>
+                                <a href="connect.html?id=7" class="btn btn-primary">Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-card match-card">
+                        <div class="match-percentage">
+                            <span>82%</span>
+                        </div>
+                        <div class="profile-image">
+                            <img src="images/karan.png" alt="Karan S.">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Karan S., 33</h3>
+                            <div class="profile-meta">
+                                <span>Ahmedabad</span>
+                                <span>Civil Engineer</span>
+                            </div>
+                            <p class="profile-bio">Civil engineer who loves to travel and explore new cultures. Looking for a like-minded companion.</p>
+                            <div class="profile-tags">
+                                <span class="tag">Engineering</span>
+                                <span class="tag">Travel</span>
+                                <span class="tag">Culture</span>
+                            </div>
+                            <div class="profile-actions">
+                                <a href="profile.html?id=8" class="btn btn-outline">View Profile</a>
+                                <a href="connect.html?id=8" class="btn btn-primary">Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="match-content" id="mutual-matches">
+                <div class="empty-state">
+                    <img src="images/empty-matches.svg" alt="No mutual matches">
+                    <h3>No Mutual Matches Yet</h3>
+                    <p>When someone you've connected with also connects with you, they'll appear here.</p>
+                    <a href="search.html" class="btn btn-primary">Find Matches</a>
+                </div>
+            </div>
+            
+            <div class="match-content" id="viewed-profiles">
+                <div class="empty-state">
+                    <img src="images/empty-views.svg" alt="No profile views">
+                    <h3>No Profile Views Yet</h3>
+                    <p>When someone views your profile, they'll appear here.</p>
+                    <a href="profile.html" class="btn btn-primary">Complete Your Profile</a>
+                </div>
+            </div>
+            
+            <div class="match-content" id="favorites">
+                <div class="empty-state">
+                    <img src="images/empty-favorites.svg" alt="No favorites">
+                    <h3>No Favorites Yet</h3>
+                    <p>Profiles you mark as favorites will appear here for easy access.</p>
+                    <a href="search.html" class="btn btn-primary">Browse Profiles</a>
+                </div>
+            </div>
+            
+            <div class="premium-banner">
+                <div class="premium-content">
+                    <h3>Unlock Premium Features</h3>
+                    <p>Get unlimited matches, see who viewed your profile, and more with our premium plans.</p>
+                    <a href="premium.html" class="btn btn-primary">Upgrade Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br/>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Heart<span>Match</span></h2>
+                    <p>Your journey to finding true love starts here</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="search.html">Search</a></li>
+                            <li><a href="matches.html">Matches</a></li>
+                            <li><a href="success-stories.html">Success Stories</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Help & Support</h3>
+                        <ul>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="safety.html">Safety Tips</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Wedding Street, Love City</li>
+                            <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                            <li><i class="fas fa-envelope"></i> info@heartmatch.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HeartMatch. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
